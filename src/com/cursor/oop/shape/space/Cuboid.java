@@ -8,10 +8,10 @@ public class Cuboid extends SpaceShape {
     private double length;
     private double height;
     private double depth;
+    private int indexOfVertex = 0;
 
-    public Cuboid(Vertex3D vertex3D, double length, double height, double depth) {
-        super(vertex3D);
-        this.vertex3D = vertex3D;
+    public Cuboid(double length, double height, double depth) {
+        this.vertex3D = super.getVertices3D().get(indexOfVertex);
         this.length = length;
         this.depth = depth;
         this.height = height;

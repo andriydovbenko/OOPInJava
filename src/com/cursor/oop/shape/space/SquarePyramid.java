@@ -7,10 +7,10 @@ public class SquarePyramid extends SpaceShape {
     private Vertex3D baseCenter;
     private double baseWidth;
     private double height;
+    private int indexOfVertex = 0;
 
-    public SquarePyramid(Vertex3D vertex3D, double baseWidth, double height) {
-        super(vertex3D);
-        this.baseCenter = vertex3D;
+    public SquarePyramid(double baseWidth, double height) {
+        this.baseCenter = super.getVertices3D().get(indexOfVertex);
         this.baseWidth = baseWidth;
         this.height = height;
         if (!(baseWidth > 0) || !(height > 0)) throw new AssertionError();

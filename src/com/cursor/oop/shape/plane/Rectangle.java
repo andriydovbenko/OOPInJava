@@ -7,12 +7,12 @@ public class Rectangle extends PlaneShape {
     private Vertex2D vertex2D;
     private double width;
     private double height;
+    private int indexOfVertex = 0;
 
-    public Rectangle(Vertex2D vertex2D, double width, double height) {
-        super(vertex2D);
+    public Rectangle(double width, double height) {
+        this.vertex2D = super.getVertices2D().get(indexOfVertex);
         this.width = width;
         this.height = height;
-        this.vertex2D = vertex2D;
         if ((!(width > 0) || !(height > 0))) throw new AssertionError();
     }
 

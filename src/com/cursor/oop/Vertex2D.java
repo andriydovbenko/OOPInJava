@@ -6,7 +6,7 @@ public class Vertex2D extends Vertex {
     private double x;
     private double y;
 
-    Vertex2D(double x, double y) {
+    public Vertex2D(double x, double y) {
         this.x = x;
         this.y = y;
     }

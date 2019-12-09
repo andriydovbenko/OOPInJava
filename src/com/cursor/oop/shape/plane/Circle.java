@@ -6,10 +6,10 @@ import com.cursor.oop.shape.PlaneShape;
 public class Circle extends PlaneShape {
     private double radius;
     private Vertex2D vertex2D;
+    private int indexOfVertex = 1;
 
-    public Circle(Vertex2D vertex2D, double radius) {
-        super(vertex2D);
-        this.vertex2D = vertex2D;
+    public Circle(double radius) {
+        this.vertex2D = super.getVertices2D().get(indexOfVertex);
         this.radius = radius;
         if (!(radius > 0)) throw new AssertionError();
     }

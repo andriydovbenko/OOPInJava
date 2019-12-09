@@ -7,13 +7,14 @@ public class Triangle extends PlaneShape {
     private Vertex2D vertex2DFirst;
     private Vertex2D vertex2DSecond;
     private Vertex2D vertex2DThird;
+    private int indexOfVertex1 = 0;
+    private int indexOfVertex2 = 1;
+    private int indexOfVertex3 = 2;
 
-
-    public Triangle(Vertex2D vertex1, Vertex2D vertex2, Vertex2D vertex3) {
-        super(vertex1, vertex2, vertex3);
-        this.vertex2DFirst = vertex1;
-        this.vertex2DSecond = vertex2;
-        this.vertex2DThird = vertex3;
+    public Triangle() {
+        this.vertex2DFirst = super.getVertices2D().get(indexOfVertex1);
+        this.vertex2DSecond = super.getVertices2D().get(indexOfVertex2);
+        this.vertex2DThird = super.getVertices2D().get(indexOfVertex3);
     }
 
     private double countTheSegment(Vertex2D first, Vertex2D second) {

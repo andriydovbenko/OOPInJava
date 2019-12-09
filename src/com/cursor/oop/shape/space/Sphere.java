@@ -6,10 +6,10 @@ import com.cursor.oop.shape.SpaceShape;
 public class Sphere extends SpaceShape {
     private Vertex3D vertex3D;
     private double radius;
+    private int indexOfVertex = 0;
 
-    public Sphere(Vertex3D vertex3D, double radius) {
-        super(vertex3D);
-        this.vertex3D = vertex3D;
+    public Sphere(double radius) {
+        this.vertex3D = super.getVertices3D().get(indexOfVertex);
         this.radius = radius;
         if (!(radius > 0)) throw new AssertionError();
     }
