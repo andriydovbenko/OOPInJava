@@ -1,8 +1,9 @@
 package com.cursor.oop.shape;
 
-import com.cursor.oop.Vertex2D;
 import com.cursor.oop.interfaces.AreaMeasurable;
 import com.cursor.oop.interfaces.PerimeterMeasurable;
+import com.cursor.oop.vertex.Vertex;
+import com.cursor.oop.vertex.Vertex2D;
 
 import java.util.ArrayList;
 

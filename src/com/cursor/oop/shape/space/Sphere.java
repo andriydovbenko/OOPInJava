@@ -1,6 +1,6 @@
 package com.cursor.oop.shape.space;
 
-import com.cursor.oop.Vertex3D;
+import com.cursor.oop.vertex.Vertex3D;
 import com.cursor.oop.shape.SpaceShape;
 
 public class Sphere extends SpaceShape {

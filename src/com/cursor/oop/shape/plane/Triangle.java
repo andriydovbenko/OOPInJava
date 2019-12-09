@@ -1,6 +1,6 @@
 package com.cursor.oop.shape.plane;
 
-import com.cursor.oop.Vertex2D;
+import com.cursor.oop.vertex.Vertex2D;
 import com.cursor.oop.shape.PlaneShape;
 
 public class Triangle extends PlaneShape {

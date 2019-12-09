@@ -1,4 +1,4 @@
-package com.cursor.oop.shape;
+package com.cursor.oop.vertex;
 
 public abstract class Vertex {
     public abstract String printCoordinate();

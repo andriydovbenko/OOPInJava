@@ -1,6 +1,4 @@
-package com.cursor.oop;
-
-import com.cursor.oop.shape.Vertex;
+package com.cursor.oop.vertex;
 
 public class Vertex3D extends Vertex {
     private double x;

@@ -1,7 +1,8 @@
 package com.cursor.oop.shape;
 
-import com.cursor.oop.Vertex2D;
-import com.cursor.oop.Vertex3D;
+import com.cursor.oop.vertex.Vertex;
+import com.cursor.oop.vertex.Vertex2D;
+import com.cursor.oop.vertex.Vertex3D;
 
 import java.text.DecimalFormat;
 import java.util.ArrayList;
