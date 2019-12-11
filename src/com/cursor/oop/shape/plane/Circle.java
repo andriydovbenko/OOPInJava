@@ -10,8 +10,12 @@ public class Circle extends PlaneShape {
 
     public Circle(double radius) {
         this.vertex2D = super.getVertices2D().get(indexOfVertex);
-        this.radius = radius;
-        if (!(radius > 0)) throw new AssertionError();
+        if (radius <= 0) {
+            System.out.println("Incorrect size of the figure\nradius=" + radius);
+            throw new AssertionError();
+        } else {
+            this.radius = radius;
+        }
     }
 
     @Override

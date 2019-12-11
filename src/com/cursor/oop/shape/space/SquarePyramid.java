@@ -11,9 +11,14 @@ public class SquarePyramid extends SpaceShape {
 
     public SquarePyramid(double baseWidth, double height) {
         this.baseCenter = super.getVertices3D().get(indexOfVertex);
-        this.baseWidth = baseWidth;
-        this.height = height;
-        if (!(baseWidth > 0) || !(height > 0)) throw new AssertionError();
+        if (baseWidth <= 0 || height <= 0) {
+            System.out.println("Incorrect size of the figure\nbase width=" +
+                    baseWidth + "\nheight=" + height);
+            throw new AssertionError();
+        } else {
+            this.baseWidth = baseWidth;
+            this.height = height;
+        }
     }
 
     @Override

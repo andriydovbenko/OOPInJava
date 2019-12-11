@@ -10,8 +10,12 @@ public class Sphere extends SpaceShape {
 
     public Sphere(double radius) {
         this.vertex3D = super.getVertices3D().get(indexOfVertex);
-        this.radius = radius;
-        if (!(radius > 0)) throw new AssertionError();
+        if (radius <= 0) {
+            System.out.println("Incorrect size of the figure\nradius=" + radius);
+            throw new AssertionError();
+        } else {
+            this.radius = radius;
+        }
     }
 
     @Override

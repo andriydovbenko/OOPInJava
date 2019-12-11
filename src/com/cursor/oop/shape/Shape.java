@@ -6,10 +6,11 @@ import com.cursor.oop.vertex.Vertex3D;
 
 import java.text.DecimalFormat;
 import java.util.ArrayList;
+import java.util.List;
 
 public abstract class Shape {
 
-    private static ArrayList<Vertex> verticesOfShape = new ArrayList<>();
+    private static List<Vertex> verticesOfShape = new ArrayList<>();
 
     static {
         Vertex2D vertex2DFirst = new Vertex2D(10, 10);
@@ -24,7 +25,7 @@ public abstract class Shape {
 
     protected DecimalFormat formatter = new DecimalFormat("#0.00");
 
-    public ArrayList<Vertex> getVerticesOfShape() {
+    public List<Vertex> getVerticesOfShape() {
         return verticesOfShape;
     }
 }

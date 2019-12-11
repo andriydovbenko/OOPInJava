@@ -11,9 +11,13 @@ public class Rectangle extends PlaneShape {
 
     public Rectangle(double width, double height) {
         this.vertex2D = super.getVertices2D().get(indexOfVertex);
-        this.width = width;
-        this.height = height;
-        if ((!(width > 0) || !(height > 0))) throw new AssertionError();
+        if (width <= 0 || height <= 0) {
+            System.out.println("Incorrect size of the figure\nwidth=" + width + "\nheight=" + height);
+            throw new AssertionError();
+        } else {
+            this.width = width;
+            this.height = height;
+        }
     }
 
     @Override

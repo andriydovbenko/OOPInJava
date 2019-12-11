@@ -12,10 +12,15 @@ public class Cuboid extends SpaceShape {
 
     public Cuboid(double length, double height, double depth) {
         this.vertex3D = super.getVertices3D().get(indexOfVertex);
-        this.length = length;
-        this.depth = depth;
-        this.height = height;
-        if ((!(depth > 0) || !(height > 0) || !((length) > 0))) throw new AssertionError();
+        if (depth <= 0 || height <= 0 || length <= 0) {
+            System.out.println("Incorrect size of the figure\ndepth=" +
+                    depth + "\nheight=" + height + "\nlength=" + length);
+            throw new AssertionError();
+        } else {
+            this.length = length;
+            this.depth = depth;
+            this.height = height;
+        }
     }
 
     @Override
